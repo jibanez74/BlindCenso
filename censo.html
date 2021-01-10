@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jose Ibanez">
+  <meta name="description" content="Un formulario para medir la población de ciegos en Puerto Rico">
+  <title>
+    Censo de Ciegos en Puerto Rico
+  </title>
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body id="page-top">
+  <header>
+    <nav class="navbar navbar-dark bg-primary p-3 navbar-exapnd-sm">
+      <div class="container">
+        <a class="navbar-brand m-auto" href="index.html">Censo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-res" aria-controls="nav-res" aria-expanded="false" aria-label="Abrir Menú de Navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-res">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  Inicio
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="censo.html">
+                  Censo
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-auto my-5">
+    <section id="form-section">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-md-12">
+            <h1>
+              Formulario
+            </h1>
+            <p>
+              Todos los campos marcados con una * son requeridos.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-md-3 mt-2">
+          <div class="col-md-8">
+            <div class="alert alert-success text-center">
+              Formulario Enviado
+            </div>
+            <div class="alert alert-danger text-center"></div>
+            <form id="censo-form">
+              <div class="form-group mb-3">
+                <label for="name">
+                  * Nombre
+                </label>
+                <input autofocus type="text" class="form-control form-control-lg" id="name" name="name" required
+                  minlength="2" maxlength="20" aria-describedby="name-help">
+                <small class="text-muted form-text" id="name-help">
+                  su nombre debe tener almenos dos caracteres y no más de 20
+                </small>
+              </div>
+              <div class="form-group mb-3">
+                <label for="fathername">
+                  * Apeelido Paterno
+                </label>
+                <input type="text" class="form-control form-control-lg" id="fathername" name="fathername" required
+                  minlength="2" maxlength="20" aria-describedby="fathername-help">
+                <small class="text-muted form-text" id="fathername-help">
+                  su apeelido paterno debe tener almenos dos caracteres y no más de 20
+                </small>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="mothername">
+                  * Apeelido Materno
+                </label>
+                <input type="text" class="form-control form-control-lg" id="mothername" name="mothername" required
+                  minlength="2" maxlength="20" aria-describedby="fathername-help">
+                <small class="text-muted form-text" id="mothername-help">
+                  su apeelido materno debe tener almenos dos caracteres y no más de 20
+                </small>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="edad">
+                  * Edad
+                </label>
+                <input type="number" class="form-control form-control-lg" id="edad" name="edad" min="0" max="150"
+                  required>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="email">
+                  Email
+                </label>
+                <input type="email" class="form-control form-control-lg" id="email" name="email">
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="telefono">
+                  Número de Teléfono
+                </label>
+                <input type="tel" class="form-control form-control-lg" id="telefono" name="telefono">
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="nivel-edu">
+                  * Nivel de Educación
+                </label>
+                <select
+                class="form-control form-control-lg"
+                required
+                id="nivel-edu"
+                name="nivel-edu"
+                >
+                  <option></option>
+                  <option value="Escuela Intermedia" label="Escuela Intermedia">Escuela Intermedia</option>
+                  <option value="Escuela Superior" label="Escuela Superior">Escuela Superior</option>
+                  <option value="Bachillerato" label="Bachillerato">Bachillerato</option>
+                  <option value="Maestria" label="Maestria">Maestría</option>
+                  <option value="Doctorado o Juris Doctor" label="Doctorado o Juris Doctor">Doctorado o Juris Doctor</option> 
+                </select>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="pueblo">
+                  * Pueblo
+                </label>
+                <select class="form-control form-control-lg" id="pueblo" name="pueblo" required>
+                  <option></option>
+                  <option label="Adjuntas" value="Adjuntas">Adjuntas</option>
+                  <option label="Aguada" value="Aguada">Aguada</option>
+                  <option value="Aguadilla" label="Aguadilla">Aguadilla</option>
+                  <option value="Aguas Buenas" label="Aguas Buenas">Aguas Buenas</option>
+                  <option value="Aibonito" label="Aibonito">Aibonito</option>
+                  <option value="Arecibo" label="Arecibo">Arecibo</option>
+                  <option value="Arroyo" label="Arroyo">Arroyo</option>
+                  <option value="Anasco" label="Anasco">Añasco</option>
+                  <option value="Barceloneta" label="Barceloneta">Barceloneta</option>
+                  <option value="Barranquitas" label="Barranquitas">Barranquitas</option>
+                  <option value="Bayamon" label="Bayamon">Bayamón</option>
+                  <option value="Cabo Rojos" label="Cabo Rojos">Cabo Rojos</option>
+                  <option value="Caguas" label="Caguas">Caguas</option>
+                  <option value="Camui" label="Camui">Camui</option>
+                  <option value="Canovanas" label="Canovanas">Canóvanas</option>
+                  <option value="Carolina" label="Carolina">Carolina</option>
+                  <option value="Catano" label="Catano">Cataño</option>
+                  <option value="Cayey" label="Cayey">Cayey</option>
+                  <option value="Ceiba" label="Ceiba">Ceiba</option>
+                  <option value="Ciales" label="Ciales">Ciales</option>
+                  <option value="Cidra" label="Cidra">Cidra</option>
+                  <option value="Coamo" label="Coamo">Coamo</option>
+                  <option value="Comerio" label="Comerio">Comerío</option>
+                  <option value="Corozal" label="Corozal">Corozal</option>
+                  <option value="Culebra" label="Culebra">Culebra</option>
+                  <option value="Dorado" label="Dorado">Dorado</option>
+                  <option value="Fajardo" label="Fajardo">Fajardo</option>
+                  <option value="Florida" label="Florida">Florida</option>
+                  <option value="Guayama" label="Guayama">Guayama</option>
+                  <option value="Guayanilla" label="Guayanilla">Guayanilla</option>
+                  <option value="Guainabo" label="Guainabo">Guainabo</option>
+                  <option value="Gurabo" value="Gurabo">Gurabo</option>
+                  <option value="Guanica" label="Guanica">Guánica</option>
+                  <option value="Hatillo" label="Hatillo">Hatillo</option>
+                  <option value="Hormigueros" label="Hormigueros">Hormigueros</option>
+                  <option value="Humacao" label="Humacao">Humacao</option>
+                  <option value="Isabela" label="Isabela">Isabela</option>
+                  <option value="Jayuya" label="Jayuya">Jayuya</option>
+                  <option value="Juana Diaz" label="Juana Diaz">Juana Diaz</option>
+                  <option value="Juncos" label="Juncos">Juncos</option>
+                  <option value="Lajas" label="Lajas">Lajas</option>
+                  <option value="Lares" label="Lares">Lares</option>
+                  <option value="Las Marias" label="Las Maris">Las Marías</option>
+                  <option value="Las Piedras" label="las Piedras">Las Piedras</option>
+                  <option value="Loiza" label="Loiza">Loiza</option>
+                  <option value="Luquillo" label="Luquillo">Luquillo</option>
+                  <option value="Manati" label="Manati">Manatí</option>
+                  <option value="Maricao" label="Maricao">Maricao</option>
+                  <option value="Maunabo" label="Maunabo">Maunabo</option>
+                  <option value="Mayaguez" label="Mayaguez">Mayagüez</option>
+                  <option value="Moca" label="Moca">Moca</option>
+                  <option value="Morovis" label="Morovis">Morovis</option>
+                  <option value="Naguabo" label="Naguabo">Naguabo</option>
+                  <option value="Naranjito" label="Naranjito">Naranjito</option>
+                  <option value="Orocovis" label="Orocovis">Orocovis</option>
+                  <option value="Patillas" label="Patillas">Patillas</option>
+                  <option value="Penuelas" label="Penuelas">Peñuelas</option>
+                  <option value="Ponce" label="Ponce">Ponce</option>
+                  <option value="Quebradillas" label="Quebradillas">Quebradillas</option>
+                  <option value="Rincon" label="Rincon">Rincón</option>
+                  <option value="Rio Grande" label="Rio Grande">Rio Grande</option>
+                  <option value="Sabana Grande" label="Sabana Grande">Sabana Grande</option>
+                  <option value="Salinas" label="Salinas">Salinas</option>
+                  <option value="San German" label="San German">San German</option>
+                  <option value="San Juan" label="San Juan">San Juan</option>
+                  <option value="San Lorenzo" label="San Lorenzo">San Lorenzo</option>
+                  <option value="San Sebastián" label="San Sebastián">San Sebastián</option>
+                  <option value="Santa Isabel" label="Santa Isabel">Santa Isabel</option>
+                  <option value="Toa Alta" label="Toa Alta">Toa Alta</option>
+                  <option value="Toa Baja" label="Toa Baja">Toa Baja</option>
+                  <option value="Trujillo Alto" label="Trujillo Alto">Trujillo Alto</option>
+                  <option value="Utuado" label="Utuado">Utuado</option>
+                  <option value="Vega Alta" label="Vega Alta">Vega Alta</option>
+                  <option value="Vega Baja" label="Vega Baja">Vega Baja</option>
+                  <option value="Viequez" label="Viequez">Viequez</option>
+                  <option value="Villalba" label="Villalba">Villalba</option>
+                  <option value="Yabucoa" label="Yabucoa">Yabucoa</option>
+                  <option value="Yauco" label="Yauco">Yauco</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="condicion">
+                  * Condición Visual Diagnosticada
+                </label>
+                <textarea class="form-control form-control-lg" id="condicion" name="condicion" required maxlength="400"
+                  minlength="4"
+                  rows="5"
+                  placeholder="el nombre de su condición, y si lo desea puede dar una breve descripción de la misma"></textarea>
+              </div>
+
+              <div id="loader" class="spinner-border" role="status">
+                <span class="sr-only">Cargando...</span>
+              </div>
+              <button type="submit" class="mt-4 btn btn-secondary btn-lg btn-block" id="btn-submit">
+                Someter Formulario
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
