@@ -11,6 +11,7 @@
   </title>
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="page-top">
@@ -49,17 +50,14 @@
               Formulario
             </h1>
             <p>
-              Todos los campos marcados con una * son requeridos.
+              Todos los campos marcados con un * son requeridos.
             </p>
           </div>
         </div>
 
-        <div class="row justify-content-center mt-md-3 mt-2">
+        <div class="row justify-content-center mt-md-3 mt-2 text-center">
           <div class="col-md-8">
-            <div class="alert alert-success text-center">
-              Formulario Enviado
-            </div>
-            <div class="alert alert-danger text-center"></div>
+            <div role="alert" id="messages"></div>
             <form id="censo-form">
               <div class="form-group mb-3">
                 <label for="name">
@@ -73,23 +71,23 @@
               </div>
               <div class="form-group mb-3">
                 <label for="fathername">
-                  * Apeelido Paterno
+                  * Apellido Paterno
                 </label>
                 <input type="text" class="form-control form-control-lg" id="fathername" name="fathername" required
                   minlength="2" maxlength="20" aria-describedby="fathername-help">
                 <small class="text-muted form-text" id="fathername-help">
-                  su apeelido paterno debe tener almenos dos caracteres y no más de 20
+                  su apellido paterno debe tener almenos dos caracteres y no más de 20
                 </small>
               </div>
 
               <div class="form-group mb-3">
                 <label for="mothername">
-                  * Apeelido Materno
+                  * Apellido Materno
                 </label>
                 <input type="text" class="form-control form-control-lg" id="mothername" name="mothername" required
                   minlength="2" maxlength="20" aria-describedby="fathername-help">
                 <small class="text-muted form-text" id="mothername-help">
-                  su apeelido materno debe tener almenos dos caracteres y no más de 20
+                  su apellido materno debe tener almenos dos caracteres y no más de 20
                 </small>
               </div>
 
@@ -231,9 +229,7 @@
                   placeholder="el nombre de su condición, y si lo desea puede dar una breve descripción de la misma"></textarea>
               </div>
 
-              <div id="loader" class="spinner-border" role="status">
-                <span class="sr-only">Cargando...</span>
-              </div>
+
               <button type="submit" class="mt-4 btn btn-secondary btn-lg btn-block" id="btn-submit">
                 Someter Formulario
               </button>
@@ -244,6 +240,9 @@
     </section>
   </main>
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 
