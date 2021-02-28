@@ -1,116 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jose Ibanez" />
+    <meta
+      name="description"
+      content="Un formulario para medir la población de ciegos en Puerto Rico"
+    />
+    <title>Censo de Ciegos en Puerto Rico</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Jose Ibanez">
-  <meta name="description" content="Un formulario para medir la población de ciegos en Puerto Rico">
-  <title>
-    Censo de Ciegos en Puerto Rico
-  </title>
-  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <body id="page-top">
+    <header>
+      <nav class="navbar navbar-dark bg-primary navbar-expand-sm px-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/brand.png" alt="logo">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#nav-res"
+            aria-controls="nav-res"
+            aria-expanded="false"
+            aria-label="Abrir Menú de Navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav-res">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"> Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="censo.html"> Censo </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<body id="page-top">
-  <header>
-    <nav class="navbar navbar-dark bg-primary p-3 navbar-expand-sm">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Censo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-res"
-          aria-controls="nav-res" aria-expanded="false" aria-label="Abrir Menú de Navegación">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav-res">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">
-                Inicio
+    <main>
+      <section class="mt-3">
+        <div id="my-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Landing.jpg" class="w-100 d-block">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="row justify-content-center">
+            <article class="col-md-8 text-dark p-3 p-md-5">
+              <h1 class="text-center my-3">Nuestro Objetivo</h1>
+              <p>
+                Es conocido que son miles las personas no videntes en Puerto
+                Rico. Hace un tiempo el exdirector ejecutivo del instituto de
+                estadísticas de Puerto Rico, Mario Marazzi señaló que; “la única
+                información al respecto sobre ésta población, la provee el U.S.
+                Census Bureau, cuya Encuesta sobre la Comunidad indica que,
+                entre el 2012-2016, 6.1% de la población en Puerto Rico tenía
+                dificultades de visión”.
+              </p>
+              <p>
+                El 6% de la población en Puerto Rico representa una enorme
+                cantidad de personas, hablamos de por lo menos 180,000
+                ciudadanos, que necesitan servicios, representación y
+                oportunidades para tener una vida independiente y útil en la
+                sociedad.
+              </p>
+              <p>
+                A parte de la información antes mencionada no existe más ninguna
+                data que pueda presentar un cuadro más claro de quienes somos
+                los no videntes y nuestras necesidades. Es por eso que me he
+                dado a la tarea de impulsar una encuesta o censo para nuestra
+                población con el propósito de entender cuántos somos, cuáles son
+                las condiciones más comunes que nos afectan, donde trabajamos
+                y/o nuestro nivel académico. Esta información nos puede ayudar a
+                organizar actividades de orientación, clínicas médicas y ayudar
+                con datos concretos a diferentes organizaciones que nos dan
+                servicio. También nos permitirá organizarnos mejor para poder
+                reclamar mejores servicios y beneficios para la comunidad ciega
+                en Puerto Rico.
+              </p>
+              <p>
+                Hemos desarrollado un sencillo cuestionario que nos ayudará a
+                recopilar esta información que hasta ahora no existe. Te pedimos
+                que lo completes y si conoces a otros no videntes en la isla te
+                pedimos que lo compartas. Si por casualidad resulta difícil para
+                ti completar el cuestionario te pedimos que nos hagas llegar por
+                email la información que solicita el formulario de manera que
+                podemos añadirte al esfuerzo. La información recopilada en esta
+                encuesta es general y no contiene nada que pueda afectar tu
+                privacidad. Confiamos en que la puedas completar y compartir.
+              </p>
+              <a href="censo.html" class="btn btn-secondary btn-lg mr-2 mt-4">
+                Llenar Censo
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="censo.html">
-                Censo
-              </a>
-            </li>
-          </ul>
+              <button
+                id="btn-email"
+                type="button"
+                class="btn btn-light btn-lg mt-4"
+              >
+                Envíanos un Email
+              </button>
+            </article>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </section>
+    </main>
 
-  <main>
-    <section class="showcase mb-5">
-      <div class="showcase-content">
-        <div class="showcase-content-inner text-center text-white">
-          <h1>Bienvenidos!</h1>
-          <p>Censo Nacional de Ciegos en Puerto Rico</p>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <div class="row justify-content-center">
-          <article class="col-md-8 text-dark p-3 p-md-5">
-            <h1 class="text-center my-3">Nuestro Objetivo</h1>
-            <p>
-              Es conocido que son miles las personas no videntes en Puerto
-              Rico. Hace un tiempo el exdirector ejecutivo del instituto de
-              estadísticas de Puerto Rico, Mario Marazzi señaló que; “la única
-              información al respecto sobre ésta población, la provee el U.S.
-              Census Bureau, cuya Encuesta sobre la Comunidad indica que,
-              entre el 2012-2016, 6.1% de la población en Puerto Rico tenía
-              dificultades de visión”.
-            </p>
-            <p>
-              El 6% de la población en Puerto Rico representa una enorme
-              cantidad de personas, hablamos de por lo menos 180,000
-              ciudadanos, que necesitan servicios, representación y
-              oportunidades para tener una vida independiente y útil en la
-              sociedad.
-            </p>
-            <p>
-              A parte de la información antes mencionada no existe más ninguna
-              data que pueda presentar un cuadro más claro de quienes somos
-              los no videntes y nuestras necesidades. Es por eso que me he
-              dado a la tarea de impulsar una encuesta o censo para nuestra
-              población con el propósito de entender cuántos somos, cuáles son
-              las condiciones más comunes que nos afectan, donde trabajamos
-              y/o nuestro nivel académico. Esta información nos puede ayudar a
-              organizar actividades de orientación, clínicas médicas y ayudar
-              con datos concretos a diferentes organizaciones que nos dan
-              servicio. También nos permitirá organizarnos mejor para poder
-              reclamar mejores servicios y beneficios para la comunidad ciega
-              en Puerto Rico.
-            </p>
-            <p>
-              Hemos desarrollado un sencillo cuestionario que nos ayudará a
-              recopilar esta información que hasta ahora no existe. Te pedimos
-              que lo completes y si conoces a otros no videntes en la isla te
-              pedimos que lo compartas. Si por casualidad resulta difícil para
-              ti completar el cuestionario te pedimos que nos hagas llegar por
-              email la información que solicita el formulario de manera que
-              podemos añadirte al esfuerzo. La información recopilada en esta
-              encuesta es general y no contiene nada que pueda afectar tu
-              privacidad. Confiamos en que la puedas completar y compartir.
-            </p>
-            <a href="censo.html" class="btn btn-secondary btn-lg mr-2 mt-4">
-            Llenar Censo
-            </a>
-            <button id="btn-email" type="button" class="btn btn-light btn-lg mt-4">
-              Envíanos un Email
-            </button>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-</body>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
